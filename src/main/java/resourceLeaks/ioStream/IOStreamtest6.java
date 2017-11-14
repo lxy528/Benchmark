@@ -21,8 +21,8 @@ public class IOStreamtest6 {
 	public  void foo(){
 		try {
 			FileInputStream fis = new FileInputStream(new File("1.txt"));
-			test.fis= fis;
-			fis.close();
+			test.setFis(fis);
+			test.getFis().close();
 		} catch ( IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

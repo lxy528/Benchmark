@@ -8,16 +8,20 @@ import java.io.IOException;
 public class IOStreamtest1 {
 	public static FileInputStream fis;
 	public static void foo() throws IOException  {
-		
+		int x = 0;
 	    FileOutputStream fos = null;
 	    try {
-	        fis = new FileInputStream(new File("1.txt"));
-	        fos = new FileOutputStream(new File("2.txt"));
+	    	
+//	        fis = new FileInputStream(new File("1.txt"));
+			fos = new FileOutputStream(new File("2.txt"));
 	        fos.write(fis.read());
 	      } 
 	    finally {
-
-		    if (fos!=null) fos.close();
-	      }
+		    if (fos!=null)
+		    {
+		    	fos.close();
+		    	fos = null;
+		    }
+	    }
 	  }
 }

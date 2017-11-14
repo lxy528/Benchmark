@@ -17,7 +17,7 @@ public class IOStreamtest19 {
 		st.close();
 	}
 	public void foo2() throws IOException{
-		//int x = 0;
+		int x = 0;
 		FileOutputStream fileOutputStream = new FileOutputStream(new File(""));
 		superTest2 st = new s2class();
 		st.set(fileOutputStream);
@@ -26,9 +26,11 @@ public class IOStreamtest19 {
 }
 class t2class implements superTest2{
 	FileOutputStream file;
+	@Override
 	public void set(FileOutputStream f) {
 		this.file = f;
 	}
+	@Override
 	public void close() {
 		try {
 			this.file.close();
@@ -40,9 +42,11 @@ class t2class implements superTest2{
 }
 class s2class implements superTest2{
 	FileOutputStream file;
+	@Override
 	public void set(FileOutputStream f) {
 		this.file = f;
 	}
+	@Override
 	public void close() {
 		int x = 0;
 		System.out.println(x);

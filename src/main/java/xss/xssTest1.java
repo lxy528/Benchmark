@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 import soot.baf.internal.BArrayLengthInst;
 
 
-public class xssTest1 {
+public class XSStest1 {
 
 	class YClass{
 		XClass xClass;
@@ -35,7 +35,7 @@ public class xssTest1 {
 		response.setHeader("X-XSS-Protection", "0");
 		Object[] obj = { "a", "b" };
 		response.getWriter().format(java.util.Locale.US,yClass.toString(),obj);
-		//response.getWriter().format(java.util.Locale.US,param,obj);
+//		response.getWriter().format(java.util.Locale.US,param,obj);
 	}
 	
 	void bar(String par, XClass xClass){

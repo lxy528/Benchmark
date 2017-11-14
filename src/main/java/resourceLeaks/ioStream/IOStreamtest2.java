@@ -13,7 +13,7 @@ public class IOStreamtest2 {
 	}
 
 	public void setFis(FileInputStream fis) {
-		this.fis = fis;
+		this.fis = fis;		
 		try {
 			this.fis.close();
 		} catch (IOException e) {

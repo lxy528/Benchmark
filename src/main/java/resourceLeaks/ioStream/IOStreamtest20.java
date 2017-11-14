@@ -6,8 +6,8 @@ import java.io.IOException;
 
 public class IOStreamtest20 {
 	public void foo(){
-		int s = 0;
-		Xclass xclass = new Xclass();
+//		int s = 0;
+		Xclass1 xclass = new Xclass1();
 		Yclass yclass1 = new Yclass();
 		Yclass yclass2 = new Yclass();
 		bar(xclass);
@@ -17,7 +17,7 @@ public class IOStreamtest20 {
 		
 	}
 		
-	void bar(Xclass xclass){
+	void bar(Xclass1 xclass){
 		try{
 			FileOutputStream fOutputStream  = new FileOutputStream(new File(""));
 			xclass.fOutputStream = fOutputStream;
@@ -25,9 +25,8 @@ public class IOStreamtest20 {
 			e.printStackTrace();
 		}
 	}
-	void set(Xclass x,Yclass y){
+	void set(Xclass1 x,Yclass y){
 		y.xclass = x;
-		
 	}
 	void close(Yclass yclass1){
 		try {
@@ -41,5 +40,8 @@ public class IOStreamtest20 {
 }
 
 class Yclass{
-	static Xclass xclass;
+	static Xclass1 xclass;
+}
+class Xclass1{
+	FileOutputStream fOutputStream;
 }

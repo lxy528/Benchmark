@@ -9,14 +9,13 @@ public class IOStreamtest15 {
 	class Yclass{
 		public Xclass xclass;}
 	public void foo(){
-		//int s = 0;
+		int s = 0;
 		Xclass xclass = new Xclass();
 		Yclass yclass = new Yclass();
 		bar(xclass);
-		set(xclass, yclass);
+//		set(xclass, yclass);
 		close(yclass);}
 	void bar(Xclass xclass){
-		
 		try{
 			FileOutputStream fOutputStream  = new FileOutputStream(new File(""));
 			xclass.fOutputStream = fOutputStream;

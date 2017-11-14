@@ -11,6 +11,7 @@ public class IOStreamtest23{
 	public  void test () throws IOException  { 
 		try {
 			fos = new FileInputStream(new File("test.txt"));
+//			pass();
 			fos = ok();
 			fos.read();
 		} catch (FileNotFoundException e) {

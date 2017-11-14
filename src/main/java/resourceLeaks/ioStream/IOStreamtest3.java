@@ -25,8 +25,6 @@ public class IOStreamtest3 {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
-		
 	}
 	
 }

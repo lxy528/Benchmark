@@ -25,6 +25,7 @@ public class IOStreamtest10 {
 	}
 	public static void notclose(){
 		System.out.println("aha!");
+		
 	}
 	public static void main(String [] args){
 		foo();

@@ -18,7 +18,6 @@ public class IOStreamtest17 {
 	}
 	class Xclass{
 		FileOutputStream fOutputStream;
-
 		public FileOutputStream getfOutputStream() {
 			return fOutputStream;
 		}
@@ -45,7 +44,6 @@ public class IOStreamtest17 {
 	}
 	void set(Xclass x,Yclass y){
 		y.setXclass(x);
-		//cYclass = y;
 	}
 	void close(Yclass y){
 		try {

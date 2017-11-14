@@ -21,14 +21,14 @@ public class IOStreamtest7 {
 	public  void foo(){
 		try {
 			FileInputStream fis = new FileInputStream(new File("1.txt"));
-			test.fis= fis;
+			test.setFis(fis);
 		} catch ( IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
 	}
-	public  void main(){
+	public void main(){
 		foo();
 		try {
 			test.fis.close();

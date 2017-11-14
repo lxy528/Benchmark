@@ -10,6 +10,7 @@ public class IOStreamtest21 {
 	}
 	public class Child implements Father{
 
+		@Override
 		public void foo() {
 			// TODO Auto-generated method stub
 			System.out.println("hahah");

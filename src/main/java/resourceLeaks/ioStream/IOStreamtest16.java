@@ -50,6 +50,7 @@ public class IOStreamtest16 {
 		y.setXclass(test2.cYclass.xclass);
 	}
 	void close(Yclass y){
+		int x = 0;
 		try {
 			y.getXclass().getfOutputStream().close();
 		} catch (IOException e) {
